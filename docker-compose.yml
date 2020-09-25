@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  work-container:
+    build: work-container
+    container_name: work-container
+    mem_limit: 8192M
+    ports:
+     - 6006:6006
+     - 8008:8888
+    volumes:
+     - /ml_projects:/ml_projects
